@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Video Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <video width="900" height="500" src="652333414.mp4"></video>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
+<script type='text/javascript'>
+    $(document).ready(function() {
+        $('video').videoPlayer({
+            'playerWidth' : 0.95,
+            'videoClass' : 'video'
+        });
+    });
+</script>
+</body>
+</html>
